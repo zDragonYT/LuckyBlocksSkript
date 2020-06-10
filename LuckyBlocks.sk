@@ -1,0 +1,25 @@
+#LuckyBlock skript by zDragon_YT
+
+on break of prismarine_bricks: 
+    chance of 10%: 
+	    cancel event
+		delete event-block
+		make console execute command "eco set %player% 10000
+		send player title "&e&lLuckyBlock" with subtitle "&eYou have found &b10.000 money!"
+		stop
+	chance of 0.5%: 
+	    cancel event
+		delete event-block
+		give 64 dirt to player
+		send player title "&e&lLuckyBlock" with subtitle "&bYou have found 64 diamonds!"
+    chance of 0.00001%:
+	    cancel event
+		delete event-block
+		make console execute command "eco set %player% 100000000000
+		send player title "&e&lLuckyBlock" with subtitle "&cYou have found 10.000.000.000 money!
+	chance of 50%
+	    cancel event
+		delete event-block
+		make console execute command "eco set %player% 10
+		send player title "&e&lLuckyBlock" with subtitle "&bWhat bad luck! &eYou have found 10 money!
+	
